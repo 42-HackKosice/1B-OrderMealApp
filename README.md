@@ -6,7 +6,7 @@ For the open part, let's take a look into how and when we order lunch.Currently,
 There are 3 questions we need to answer each day:
 1. Who is ordering today?
 2. Which restaurant we want to order from?
-3. When do we want to order?
+3. When do we want to order?  
 Your mission is to optimise this process.  The result could be a chatbot, a mobile app or a web app. If you feel like doing a bit of extra work, you could store the information gathered in the process and expose statistical data about our favourite meals, restaurants.
 Keep in mind, that the app could very well be later developed by someone else, so make sure your code is clean!
 If you are not a programmer, a UX, or a design for an app would be great!
