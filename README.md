@@ -2,6 +2,31 @@
 App to order meal for company lunch
 
 
+## How to set up
+1. [Stiahnuť php alebo xampp (v xamppe je php a je tam este lokalny mail server aj mysql databaza ale malo by to byt jedno)]
+2. [Stiahnuť composer](https://getcomposer.org/)
+
+    po nainštalovaní do konzoly cd <miesto kde chcete projekt>
+  - clone https://github.com/42-HackKosice/1B-OrderMealApp.git
+  - cd 1B-OrderMealApp
+  - premenovať súbor .env.example na .env
+  - composer install
+  - php artisan key:generate
+  - php artisan migrate 
+  - php artisan serve na spustenie webu lokalne 
+
+
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+
+
+
 For the open part, let's take a look into how and when we order lunch.Currently, it can take us up to 30 minutes to figure this out. This is a lot of time we'd rather save and spend on building products.
 There are 3 questions we need to answer each day:
 1. Who is ordering today?
