@@ -12,7 +12,7 @@ App to order meal for company lunch
   - premenovať súbor **env.example na .env**
   - **composer install**
   - **php artisan key:generate**
-  - **php artisan migrate **
+  - **php artisan migrate**
   - **php artisan serve** na spustenie webu lokalne 
 
 
