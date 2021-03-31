@@ -6,7 +6,7 @@ App to order meal for company lunch
 1. [Stiahnuť php alebo xampp] (v xamppe je php a je tam este lokalny mail server aj mysql databaza ale malo by to byt jedno)
 2. [Stiahnuť composer](https://getcomposer.org/)
 
-    po nainštalovaní do konzoly cd <miesto kde chcete projekt>
+3. po nainštalovaní do konzoly cd (miesto kde chcete projekt) ja mám C:\xampp/htdocs/laravelapps
   - clone https://github.com/42-HackKosice/1B-OrderMealApp.git
   - cd 1B-OrderMealApp
   - premenovať súbor .env.example na .env
