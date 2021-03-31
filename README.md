@@ -7,14 +7,17 @@ App to order meal for company lunch
 2. [Stiahnuť composer](https://getcomposer.org/)
 
 3. po nainštalovaní do konzoly cd (miesto kde chcete projekt) ja mám C:\xampp/htdocs/laravelapps
-  - **clone https://github.com/42-HackKosice/1B-OrderMealApp.git**
-  - **cd 1B-OrderMealApp**
-  - premenovať súbor **env.example na .env**
-  - **composer install**
-  - **php artisan key:generate**
-  - **php artisan migrate**
-  - **php artisan serve** na spustenie webu lokalne 
- 
+```
+https://github.com/42-HackKosice/1B-OrderMealApp.git
+cd 1B-OrderMealApp
+```
+premenovať súbor **env.example na .env**
+```
+composer install
+php artisan key:generate
+php artisan migrate
+php artisan serve - na spustenie webu lokalne 
+```
  
  ## About project
 
