@@ -14,7 +14,9 @@ App to order meal for company lunch
   - **php artisan key:generate**
   - **php artisan migrate**
   - **php artisan serve** na spustenie webu lokalne 
-
+ 
+ 
+ ## About project
 
 For the open part, let's take a look into how and when we order lunch.Currently, it can take us up to 30 minutes to figure this out. This is a lot of time we'd rather save and spend on building products.
 There are 3 questions we need to answer each day:
