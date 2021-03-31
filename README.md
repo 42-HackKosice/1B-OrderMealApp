@@ -3,7 +3,7 @@ App to order meal for company lunch
 
 
 ## How to set up
-1. [Stiahnuť php alebo xampp (v xamppe je php a je tam este lokalny mail server aj mysql databaza ale malo by to byt jedno)]
+1. [Stiahnuť php alebo xampp] (v xamppe je php a je tam este lokalny mail server aj mysql databaza ale malo by to byt jedno)
 2. [Stiahnuť composer](https://getcomposer.org/)
 
     po nainštalovaní do konzoly cd <miesto kde chcete projekt>
