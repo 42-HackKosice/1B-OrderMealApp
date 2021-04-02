@@ -2,18 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Order;
-use Carbon\Carbon;
+use App\Models\OrderMeal;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class OrderFactory extends Factory
+class OrderMealFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Order::class;
+    protected $model = OrderMeal::class;
 
     /**
      * Define the model's default state.
@@ -22,12 +21,10 @@ class OrderFactory extends Factory
      */
     public function definition()
     {
-
         return [
-            'user_id' => $this->faker->unique()->numberBetween(1,30),
-            'restaurant_id' =>mt_rand(1,30),
-            'time' => $this->faker->unique()->dateTime
+            'user_id' => $this->faker->numberBetween(1,30),
+            'order_id' => $this->faker->numberBetween(1,30),
+             'meal' => $this->faker->sentence(2),
         ];
     }
 }
-//

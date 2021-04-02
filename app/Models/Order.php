@@ -22,6 +22,11 @@ class Order extends Model
     {
         return $this->belongsTo(Restaurant::class);
     }
+    public function orderMeal()
+    {
+        return $this->belongsTo(OrderMeal::class);
+    }
+
 }
 
 

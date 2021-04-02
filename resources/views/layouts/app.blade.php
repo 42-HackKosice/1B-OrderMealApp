@@ -45,7 +45,7 @@
                     @else
 
 
-
+                        <span><a href="{{route('myOrders')}}">My orders</a></span>
                         <span>{{ Auth::user()->name }}</span>
 
 
