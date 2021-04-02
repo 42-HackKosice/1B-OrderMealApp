@@ -26,3 +26,4 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 
 
 Route::get('/myOrders', [\App\Http\Controllers\OrderMealController::class, 'index'])->name('myOrders');
+Route::get('/myprofile', [\App\Http\Controllers\UserController::class, 'index'])->name('myprofile');

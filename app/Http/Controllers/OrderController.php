@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Carbon\Carbon;
 use Faker\Provider\DateTime;
 use Illuminate\Http\Request;
@@ -15,11 +16,13 @@ class OrderController extends Controller
     public function index()
     {
 //        $orders = Order::whereDate('time','>=',Carbon::now())->orderBy('time','asc')->get();
-
         $orders = Order::with(['user','restaurant'])->whereDate('time','>=',Carbon::now())->orderBy('time','asc')->get();
+        //last user that order
+        $tomorrow = User::orderBy('lastOrder')->first();
 
         return view('orders.index')->with([
-            'orders' => $orders
+            'orders' => $orders,
+            'tomorrow' => $tomorrow
         ]);
    }
 }

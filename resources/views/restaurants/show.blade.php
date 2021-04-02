@@ -16,8 +16,12 @@
                 <p class="mx-auto text-base font-medium leading-relaxed text-gray-700 lg:w-2/3">
                     {{$data->description}}
                 </p>
-                <p class="mt-4 text-xs font-semibold tracking-widest text-blue-600 uppercase title-font">
+                <p class="mt-4 text-xs font-semibold tracking-widest text-gray-700 uppercase title-font">
                     {{$data->adress}}
+                </p>
+
+                <p class="mt-4 text-xs font-semibold tracking-widest text-blue-600 uppercase title-font">
+                    <a href=" {{$data->web}}">  {{$data->web}}</a>
                 </p>
             </div>
             <div class="flex lg:justify-center">
