@@ -51,16 +51,18 @@
             <div class="w-full h-screen bg-opacity-50 bg-black flex justify-center items-center  ">
                 <div class="mx-4 text-center text-white  ">
                     @if($data->isNotEmpty())
+                        @if($data[0]->restaurant!=null)
                         <a href="{{route('restaurants.show',$data[0]->restaurant->id)}}">
+
                     <h1 class="font-bold text-6xl mb-4">{{$data[0]->restaurant->name}}</h1>
+
                         </a>
+                        @endif
                     <h2 class="font-bold text-3xl mb-8">{{$data[0]->user->name}}</h2>
 
                         <h3 class="font-bold text-3xl mb-12">{{$data[0]->time->isoFormat('HH:mm dddd D')}}</h3>
                     <div>
-                        <a href="{{route('restaurants.show',$data[0]->restaurant->id)}}" class="bg-blue-500 rounded-md font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-2">
-                            Check restaurant
-                        </a>
+
                         @else
                             <h1 class="font-bold text-6xl mb-4">Free Time</h1>
                         @endif

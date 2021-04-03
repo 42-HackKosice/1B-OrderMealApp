@@ -2,8 +2,13 @@
 
 namespace App\Console;
 
+use App\Console\Commands\UserLogic;
+use App\Models\Order;
+use Carbon\Carbon;
+use http\Client\Curl\User;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\DB;
 
 class Kernel extends ConsoleKernel
 {
@@ -13,7 +18,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        UserLogic::class,
     ];
 
     /**
@@ -25,6 +30,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+
+        $schedule->command('user:logic')->dailyAt('23:59');
+
     }
 
     /**

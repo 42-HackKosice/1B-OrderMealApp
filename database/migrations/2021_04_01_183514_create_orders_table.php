@@ -17,7 +17,7 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('restaurant_id')->nullable()->constrained()->onDelete('cascade');
-            $table->dateTime('time');
+            $table->dateTime('time')->nullable();
             $table->timestamps();
         });
     }

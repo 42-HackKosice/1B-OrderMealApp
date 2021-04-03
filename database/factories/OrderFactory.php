@@ -26,7 +26,8 @@ class OrderFactory extends Factory
         return [
             'user_id' => $this->faker->unique()->numberBetween(1,30),
             'restaurant_id' =>mt_rand(1,30),
-            'time' => $this->faker->unique()->dateTime
+            'time' => Carbon::tomorrow()->addDay(mt_rand(-60,0)),
+
         ];
     }
 }

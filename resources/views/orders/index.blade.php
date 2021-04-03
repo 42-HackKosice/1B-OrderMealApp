@@ -54,9 +54,10 @@
     </g>
 
                                     </div>
-
+                                    @if($order->restaurant!=null)
                                     <span  class="font-medium"> <a href="{{route('restaurants.show',$order->restaurant->id)}}">
                                         {{$order->restaurant->name}}  </a></span>
+                                        @endif
 
                                 </div>
                             </td>
