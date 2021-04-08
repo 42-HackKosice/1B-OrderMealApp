@@ -32,7 +32,6 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
 
         $schedule->command('user:logic')->dailyAt('23:59');
-
     }
 
     /**

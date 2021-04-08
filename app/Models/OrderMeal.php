@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class OrderMeal extends Model
 {
+    protected $fillable = [
+        'user_id',
+        'order_id',
+        'meal',
+    ];
     use HasFactory;
 
 
@@ -18,5 +23,11 @@ class OrderMeal extends Model
     public function order()
     {
         return $this->belongsTo(Order::class);
+    }
+
+    public function restaurant()
+    {
+        return $this->hasOneThrough(Restaurant::class,Order::class);
+
     }
 }

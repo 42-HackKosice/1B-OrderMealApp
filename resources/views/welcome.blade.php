@@ -18,7 +18,7 @@
     @if(Route::has('login'))
         <div class="absolute top-0 right-0 mt-4 mr-4 space-x-4 sm:mt-6 sm:mr-6 sm:space-x-6">
             @auth
-                <a href="{{ url('/home') }}" class="text-white font-bold text-xl mb-4">{{ __('Home') }}</a>
+                <a href="{{ route('myprofile') }}" class="text-white font-bold text-xl mb-4">{{ __('Home') }}</a>
             @else
                 <a href="{{ route('login') }}" class="text-white font-bold text-xl mb-4">{{ __('Login') }}</a>
                 @if (Route::has('register'))
@@ -54,13 +54,13 @@
                         @if($data[0]->restaurant!=null)
                         <a href="{{route('restaurants.show',$data[0]->restaurant->id)}}">
 
-                    <h1 class="font-bold text-6xl mb-4">{{$data[0]->restaurant->name}}</h1>
+                    <h1 class="font-bold text-6xl mb-4"><span class="text-5xl">Restaurant:</span> {{$data[0]->restaurant->name}}</h1>
 
                         </a>
                         @endif
-                    <h2 class="font-bold text-3xl mb-8">{{$data[0]->user->name}}</h2>
+                    <h2 class="font-bold text-3xl mb-8">Who: {{$data[0]->user->name}}</h2>
 
-                        <h3 class="font-bold text-3xl mb-12">{{$data[0]->time->isoFormat('HH:mm dddd D')}}</h3>
+                        <h3 class="font-bold text-3xl mb-12">When: {{$data[0]->time->isoFormat('HH:mm dddd D')}}</h3>
                     <div>
 
                         @else

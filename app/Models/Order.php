@@ -24,7 +24,7 @@ class Order extends Model
     }
     public function orderMeal()
     {
-        return $this->belongsTo(OrderMeal::class);
+        return $this->hasMany(OrderMeal::class);
     }
 
 }

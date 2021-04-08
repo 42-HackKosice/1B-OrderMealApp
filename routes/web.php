@@ -22,8 +22,18 @@ Route::get('/restaurants/{data}', [\App\Http\Controllers\RestaurantController::c
 //
 Route::get('/order',[\App\Http\Controllers\OrderController::class,'index'])->name('order');
 
+Route::get('/order/edit',[\App\Http\Controllers\OrderController::class,'edit'])->name('order.edit');
+Route::patch('/order',[\App\Http\Controllers\OrderController::class,'update'])->name('order.update');
+
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::get('/myOrders', [\App\Http\Controllers\OrderMealController::class, 'index'])->name('myOrders');
+Route::get('meal/', [\App\Http\Controllers\OrderMealController::class, 'index'])->name('meal');
+Route::post('meal/',[\App\Http\Controllers\OrderMealController::class,'store'])->name('meal.store');
+Route::get('meal/create',[\App\Http\Controllers\OrderMealController::class,'create'])->name('meal.create');
+Route::get('meal/edit',[\App\Http\Controllers\OrderMealController::class,'edit'])->name('meal.edit');
+Route::patch('meal',[\App\Http\Controllers\OrderMealController::class,'update'])->name('meal.update');
+Route::delete('meal/{id}',[\App\Http\Controllers\OrderMealController::class,'destroy'])->name('meal.destroy');
+
+
 Route::get('/myprofile', [\App\Http\Controllers\UserController::class, 'index'])->name('myprofile');

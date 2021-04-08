@@ -40,12 +40,12 @@ class UserLogic extends Command
      */
     public function handle()
     {
-        if (Carbon::tomorrow()->isWeekend()){
+        if (!Carbon::tomorrow()->isWeekend()){
 
-            $user = User::orderBy('lastOrder')
+            $user = Order::orderBy('time','desc')->with('user')
                 ->first();
-            $user->lastOrder = Carbon::today();
-            $user->save();
+            $user->user->lastOrder = $user->time;
+            $user->user->save();
 
             $tomorrowUser = new Order();
             $tomorrowUser->user_id =User::orderBy('lastOrder')->first()->id;

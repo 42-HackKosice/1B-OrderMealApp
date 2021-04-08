@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Http\Controllers\RestaurantController;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -49,6 +50,13 @@ class User extends Authenticatable
 
     public function orderMeal()
     {
-        return $this->belongsTo(OrderMeal::class);
+        return $this->hasMany(OrderMeal::class);
     }
+
+    public function orderMealRestaurant()
+    {
+        return $this->hasOneThrough(OrderMeal::class,Restaurant::class);
+    }
+
+
 }

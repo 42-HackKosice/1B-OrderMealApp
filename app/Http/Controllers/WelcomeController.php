@@ -12,7 +12,8 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        $data = Order::with(['user','restaurant'])->whereDate('time','=',Carbon::now()->addDay(1))->get();
+        $data = Order::with(['user','restaurant'])->whereDate('time','=',Carbon::now())->get();
+
 
 
 //        if (Carbon::now()->addDay()->isoFormat('dddd')=="Saturday")
