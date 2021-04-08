@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Http\Controllers\RestaurantController;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -20,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'lastOrder'
     ];
 
     /**
@@ -40,4 +42,21 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
+    public function orderMeal()
+    {
+        return $this->hasMany(OrderMeal::class);
+    }
+
+    public function orderMealRestaurant()
+    {
+        return $this->hasOneThrough(OrderMeal::class,Restaurant::class);
+    }
+
+
 }
