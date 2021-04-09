@@ -23,7 +23,7 @@ After logging in you can see your profile in which are data like what are you or
 Presentation and features of prototype are shown in this video(image/link):
 [![Obrázok1](https://user-images.githubusercontent.com/41269745/114224997-199d6900-9972-11eb-81e4-a4f3dd65ea29.png)](https://youtu.be/064sRkHrSnY)  
 
-*[x] We can see From where, who and when we are ordering.
+* [x] We can see From where, who and when we are ordering.
 
 ## How to try
 
