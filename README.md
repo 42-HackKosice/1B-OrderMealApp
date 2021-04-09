@@ -17,9 +17,9 @@
 Our project about meal ordering for example for Sudolabs, shows at the home page who order from where and when.  
 After logging in you can see your profile in which are data like what are you ordering today, and your order history. If you are today orderer, you can see the list of orders from all people so you can see what they want.
 
-## Protoype
+## Presentation of Protoype
 
-*Describe the basic functionality of your prototype. What are the features you were able to implement? What features would you like to implement?*
+[Video](https://youtu.be/064sRkHrSnY)
 
 ## How to try
 
