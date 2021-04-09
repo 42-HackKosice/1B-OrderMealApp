@@ -106,7 +106,7 @@
                                 <div class="col-span-8 px-4 py-2 font-semibold space-x-2 font-semibold text-gray-900 leading-8 text-lg">My today's  meal order</div>
 
                                 <div class="px-4 py-1 col-span-4 text-lg">@if(!$todayusermeal->orderMeal->isEmpty())
-                                        {{\Illuminate\Support\Str::limit($todayusermeal->orderMeal->meal,10)}}
+                                        {{\Illuminate\Support\Str::limit($todayusermeal->orderMeal[0]->meal,10)}}
 
 
                                     @else
@@ -134,7 +134,7 @@
                                         </svg>
                                     </div>
                                         </a>
-                                        <form class="inline " method="post" action="{{route('meal.destroy',$todayusermeal[0]->orderMeal[0]->id)}}">
+                                        <form class="inline " method="post" action="{{route('meal.destroy',$todayusermeal->orderMeal[0]->id)}}">
                                             @method('DELETE')
                                             @csrf
                                             <button type="submit">

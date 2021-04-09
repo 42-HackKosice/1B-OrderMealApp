@@ -51,6 +51,12 @@ class UserController extends Controller
 
 
 
+
+
+
+
+
+
         //returns position at database
         $userNextOrdering = User::where('lastOrder','<',$user->lastOrder)->count();
 
