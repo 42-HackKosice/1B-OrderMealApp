@@ -47,7 +47,7 @@ Our team is proud on ourselves because this is for 2/3 of team members first hac
 ## Next steps
 
 * [ ] Fill the web with real Data (Users, Restaurants)  
->#### Possiible Upgrades:
+>#### Possible Upgrades:
 >* [ ] Automatic near restaurants
 >* [ ] Reviews of the restaurants and ordered meals
 
