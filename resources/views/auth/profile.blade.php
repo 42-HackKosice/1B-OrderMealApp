@@ -28,7 +28,7 @@
 
                         </li>
 
-
+                        @if($todayusermeal!=null)
                         <li class="flex items-center py-3 ">
                         @if($todayusermeal[0]->user->id==auth()->user()->getAuthIdentifier())
                             <a href="{{route('meal')}}">
@@ -40,6 +40,7 @@
                         @endif
                             @endif
                         </li>
+                        @endif
 
                         <li class="flex items-center py-3">
                             <span>Status</span>
@@ -60,6 +61,9 @@
             <div class="w-full md:w-9/12 mx-2 h-64">
                 <!-- Profile tab -->
                 <!-- About Section -->
+
+                @if($todayusermeal!=null)
+
                 <div class="bg-white border-t-4 border-blue-400 p-3 shadow-sm rounded-sm">
                     <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
                         <span clas="text-green-500">
@@ -69,30 +73,30 @@
                                       d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                             </svg>
                         </span>
-                        <span class="tracking-wide">Today'smeal order</span>
+                        <span class="tracking-wide">Today's meal order</span>
                     </div>
                     <div class="text-gray-700">
                         <div class="grid md:grid-cols-2 text-sm">
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Restaurant</div>
-                                <div class="px-4 py-2">@if($todayusermeal[0]->restaurant!==null)
-                                        {{$todayusermeal[0]->restaurant->name}}
+                                <div class="px-4 py-2">@if($todayusermeal->restaurant!==null)
+                                        {{$todayusermeal->restaurant->name}}
                                     @else
                                         <p class="text-red-500">Not choosen yet</p>
                                     @endif</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Order Time</div>
-                                <div class="px-4 py-2">{{$todayusermeal[0]->time->format('H:i')}}</div>
+                                <div class="px-4 py-2">{{$todayusermeal->time->format('H:i')}}</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Today's orderer</div>
-                                <div class="px-4 py-2">{{$todayusermeal[0]->user->name}}</div>
+                                <div class="px-4 py-2">{{$todayusermeal->user->name}}</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold ">Restaurant web</div>
-                                <div class="px-4 py-2">@if($todayusermeal[0]->restaurant!==null)
-                                        {{$todayusermeal[0]->restaurant->web}}
+                                <div class="px-4 py-2">@if($todayusermeal->restaurant!==null)
+                                        {{$todayusermeal->restaurant->web}}
                                     @else
                                         <p class="text-red-500">Not choosen yet</p>@endif</div>
                             </div>
@@ -101,8 +105,8 @@
                             <div class="grid grid-cols-8">
                                 <div class="col-span-8 px-4 py-2 font-semibold space-x-2 font-semibold text-gray-900 leading-8 text-lg">My today's  meal order</div>
 
-                                <div class="px-4 py-1 col-span-4 text-lg">@if(!$todayusermeal[0]->orderMeal->isEmpty())
-                                        {{\Illuminate\Support\Str::limit($todayusermeal[0]->orderMeal[0]->meal,10)}}
+                                <div class="px-4 py-1 col-span-4 text-lg">@if(!$todayusermeal->orderMeal->isEmpty())
+                                        {{\Illuminate\Support\Str::limit($todayusermeal->orderMeal->meal,10)}}
 
 
                                     @else
@@ -121,7 +125,7 @@
                                 @endif
 
                                 </div>
-                                @if(!$todayusermeal[0]->orderMeal->isEmpty())
+                                @if(!$todayusermeal->orderMeal->isEmpty())
                                     <div class="col-span-2 col-start-6 flex item-center justify-center ">
                                         <a href="{{route('meal.edit')}}">
                                     <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
@@ -170,6 +174,7 @@
 {{--                        class="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">Show--}}
 {{--                        Full Information</button>--}}
                 </div>
+                @endif
                 <!-- End of about section -->
 
                 <div class="my-4"></div>

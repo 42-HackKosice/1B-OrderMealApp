@@ -45,7 +45,7 @@ class UserController extends Controller
 
         $todayusermeal = Order::whereDate('time','=',Carbon::today())->with(['user','restaurant','orderMeal' => function($q){
             $q->where('user_id', '=', auth()->id());
-        }])->get();
+        }])->first();
 
 
 
