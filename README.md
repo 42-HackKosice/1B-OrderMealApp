@@ -1,3 +1,4 @@
+
 # Hack Kosice Marathon: OrderMealApp
 
 *A template for projects submitted to HK Marathon 2021. You can [fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) and use it as a starting point.*
@@ -19,7 +20,7 @@ After logging in you can see your profile in which are data like what are you or
 
 ## Presentation of Protoype
 
-[Video](https://youtu.be/064sRkHrSnY)
+[![Obrázok1](https://user-images.githubusercontent.com/41269745/114224997-199d6900-9972-11eb-81e4-a4f3dd65ea29.png)](https://youtu.be/064sRkHrSnY)
 
 ## How to try
 
