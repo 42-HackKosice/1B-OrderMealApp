@@ -25,6 +25,13 @@ After logging in you can see your profile in which are data like what are you or
 
 [Link for website: https://ordermeal.azurewebsites.net/](https://ordermeal.azurewebsites.net/)
 
+You can register as new user of the system.  
+Or you can use the preset account from us:
+```
+Mail: test@profile.me
+Password: zgt39nqcDzsw:gS
+```
+
 ![](https://mazur.blob.core.windows.net/obrazky/Screenshot%202021-04-09%20160304.png?sp=rl&st=2021-04-09T13:50:44Z&se=2092-12-10T13:50:00Z&sv=2020-02-10&sr=b&sig=UX5GOhtkkZIMzvjg55C4rEVm1FPFm4Af51mzRNcxm%2FY%3D)
 
 ## Presentation
@@ -32,6 +39,8 @@ After logging in you can see your profile in which are data like what are you or
 *List any links to your presentation or additional materials that you want to share with the judges.*
 
 ## Challenges and accomplishments
+
+Our team is proud on ourselves because this is for 2/3 of team members first hackathon.
 
 *Is there anything unexpected that you learned over the course of this project?*
 
