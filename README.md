@@ -23,8 +23,6 @@ After logging in you can see your profile in which are data like what are you or
 Presentation and features of prototype are shown in this video(image/link):
 [![Obrázok1](https://user-images.githubusercontent.com/41269745/114224997-199d6900-9972-11eb-81e4-a4f3dd65ea29.png)](https://youtu.be/064sRkHrSnY)  
 
-* [x] We can see From where, who and when we are ordering.
-
 ## How to try
 
 [Link for website: https://ordermeal.azurewebsites.net/](https://ordermeal.azurewebsites.net/)
@@ -41,15 +39,17 @@ Password: zgt39nqcDzsw:gS
 
 ## Challenges and accomplishments
 
-Our team is proud on ourselves because this is for 2/3 of team members first hackathon.
+Biggest challenge for us was to automate the tasks for the working people so they just need to choose what they want and than one person need to order it. And the things like who is ordering and when you are ordering next food are automatized. 
+
+Our team is proud on ourselves because this is for 2/3 of team members first hackathon. And also we used first time Git, GitHub and Laravel in one project.
 
 
 ## Next steps
 
-[ ] Fill the web with real Data  
-[ ] 
-
-*What do you need to do next to turn this prototype into a working solution?*
+* [ ] Fill the web with real Data (Users, Restaurants)  
+>#### Possiible Upgrades:
+>* [ ] Automatic near restaurants
+>* [ ] Reviews of the restaurants and ordered meals
 
 ## License
 
