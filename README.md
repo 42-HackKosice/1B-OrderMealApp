@@ -14,7 +14,8 @@
 
 ## Description
 
-*A clear statement of the challenges, issues, problems or gaps that your project solves and a brief description of how your project tackles the areas. What is the value of your solution? Who are the target users?*
+Our project about meal ordering for example for Sudolabs, shows at the home page who order from where and when.  
+After logging in you can see your profile in which are data like what are you ordering today, and your order history. If you are today orderer, you can see the list of orders from all people so you can see what they want.
 
 ## Protoype
 
@@ -22,7 +23,9 @@
 
 ## How to try
 
-*List any URLs relevant to demonstrating your prototype, e.g. a live url where judges can preview your app. Note that judges won't be able to setup anything in their computers.*
+[Link for website: https://ordermeal.azurewebsites.net/](https://ordermeal.azurewebsites.net/)
+
+![](https://mazur.blob.core.windows.net/obrazky/Screenshot%202021-04-09%20160304.png?sp=rl&st=2021-04-09T13:50:44Z&se=2092-12-10T13:50:00Z&sv=2020-02-10&sr=b&sig=UX5GOhtkkZIMzvjg55C4rEVm1FPFm4Af51mzRNcxm%2FY%3D)
 
 ## Presentation
 
@@ -36,14 +39,21 @@
 
 ## Next steps
 
+[ ] Fill the web with real Data  
+[ ] 
+
 *What do you need to do next to turn this prototype into a working solution?*
 
 ## License
 
-*This repository includes an [unlicense](http://unlicense.org/) statement though you may want [to choose a different license](https://choosealicense.com/).*
+[MIT License](https://github.com/42-HackKosice/1B-OrderMealApp/blob/main/LICENSE)
 
 
 
+</br>  
+</br>  
+</br>  
+</br>  
 
 ## How to set up
 1. [Stiahnuť php alebo xampp] (v xamppe je php a je tam este lokalny mail server aj mysql databaza ale malo by to byt jedno)
@@ -62,7 +72,7 @@ php artisan migrate
 php artisan serve - na spustenie webu lokalne 
 ```
  
- ## ABOUT PROJECT
+ ## Project Challenge
 
 For the open part, let's take a look into how and when we order lunch.Currently, it can take us up to 30 minutes to figure this out. This is a lot of time we'd rather save and spend on building products.
 There are 3 questions we need to answer each day:
